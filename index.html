@@ -1,0 +1,1644 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pint of View - India's Largest Lecture Community</title>
+
+    <style>
+
+        * {
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+        }
+
+
+
+        html {
+
+            scroll-behavior: smooth;
+
+        }
+
+
+
+        body {
+
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+
+            -webkit-font-smoothing: antialiased;
+
+            -moz-osx-font-smoothing: grayscale;
+
+            background-color: #FFF8F0;
+
+        }
+
+
+
+        a {
+
+            text-decoration: none;
+
+            color: inherit;
+
+        }
+
+
+
+        button, a {
+
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+
+        }
+
+
+
+        /* Hero Section */
+
+        .hero {
+
+            position: relative;
+
+            min-height: 100vh;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding: 5rem 1.5rem;
+
+            background-image: url('https://customer-assets.emergentagent.com/job_pinto-hub/artifacts/37tq1pvj_X34A0660.jpg');
+
+            background-size: cover;
+
+            background-position: center;
+
+        }
+
+
+
+        .hero-overlay {
+
+            position: absolute;
+
+            inset: 0;
+
+            background-color: rgba(61, 40, 23, 0.75);
+
+        }
+
+
+
+        .hero-content {
+
+            position: relative;
+
+            z-index: 10;
+
+            max-width: 64rem;
+
+            margin: 0 auto;
+
+            text-align: center;
+
+        }
+
+
+
+        .logo-container {
+
+            margin-bottom: 3rem;
+
+            display: flex;
+
+            justify-content: center;
+
+        }
+
+
+
+        .logo-card {
+
+            background: white;
+
+            padding: 2rem;
+
+            border-radius: 1.5rem;
+
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+
+        }
+
+
+
+        .logo-card img {
+
+            width: 16rem;
+
+            height: auto;
+
+            transition: transform 0.5s;
+
+        }
+
+
+
+        .logo-card:hover img {
+
+            transform: scale(1.05);
+
+        }
+
+
+
+        .hero h1 {
+
+            font-size: 3.75rem;
+
+            font-weight: bold;
+
+            color: white;
+
+            margin-bottom: 1.5rem;
+
+            letter-spacing: -0.025em;
+
+            text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+
+        }
+
+
+
+        .hero-subtitle {
+
+            font-size: 1.5rem;
+
+            color: #F5E6D3;
+
+            margin-bottom: 2rem;
+
+            line-height: 1.75;
+
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+        }
+
+
+
+        .hero-buttons {
+
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 1rem;
+
+            justify-content: center;
+
+        }
+
+
+
+        .btn {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding: 1.5rem 2rem;
+
+            font-size: 1.125rem;
+
+            font-weight: 600;
+
+            border-radius: 9999px;
+
+            cursor: pointer;
+
+            border: none;
+
+            transition: all 0.3s;
+
+        }
+
+
+
+        .btn-primary {
+
+            background: white;
+
+            color: #3D2817;
+
+        }
+
+
+
+        .btn-primary:hover {
+
+            background: #F5E6D3;
+
+            transform: translateY(-4px);
+
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+
+        }
+
+
+
+        .btn-secondary {
+
+            background: transparent;
+
+            color: white;
+
+            border: 2px solid white;
+
+        }
+
+
+
+        .btn-secondary:hover {
+
+            background: white;
+
+            color: #3D2817;
+
+            transform: translateY(-4px);
+
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+
+        }
+
+
+
+        /* Chapters Section */
+
+        .section {
+
+            padding: 5rem 1.5rem;
+
+        }
+
+
+
+        .section-bg-beige {
+
+            background-color: #F5E6D3;
+
+        }
+
+
+
+        .section-bg-white {
+
+            background-color: white;
+
+        }
+
+
+
+        .section-bg-cream {
+
+            background-color: #FFF8F0;
+
+        }
+
+
+
+        .container {
+
+            max-width: 72rem;
+
+            margin: 0 auto;
+
+        }
+
+
+
+        .text-center {
+
+            text-align: center;
+
+        }
+
+
+
+        .section-title {
+
+            font-size: 3rem;
+
+            font-weight: bold;
+
+            color: #3D2817;
+
+            margin-bottom: 1.5rem;
+
+        }
+
+
+
+        .section-subtitle {
+
+            font-size: 1.25rem;
+
+            color: #6B4423;
+
+            margin-bottom: 2.5rem;
+
+        }
+
+
+
+        .icon-wrapper {
+
+            display: flex;
+
+            justify-content: center;
+
+            margin-bottom: 1.5rem;
+
+        }
+
+
+
+        .cities-grid {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            justify-content: center;
+
+            gap: 1rem;
+
+            max-width: 80rem;
+
+            margin: 0 auto;
+
+        }
+
+
+
+        .city-badge {
+
+            padding: 0.75rem 1.5rem;
+
+            background: white;
+
+            color: #3D2817;
+
+            border-radius: 9999px;
+
+            font-weight: 600;
+
+            font-size: 1.125rem;
+
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+            transition: all 0.3s;
+
+        }
+
+
+
+        .city-badge:hover {
+
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+
+            transform: translateY(-4px);
+
+            background: #3D2817;
+
+            color: white;
+
+        }
+
+
+
+        /* About & History */
+
+        .about-content, .history-content {
+
+            max-width: 64rem;
+
+            margin: 0 auto;
+
+            text-align: center;
+
+        }
+
+
+
+        .about-text, .history-text {
+
+            font-size: 1.5rem;
+
+            color: #6B4423;
+
+            line-height: 1.75;
+
+            margin-bottom: 1.5rem;
+
+        }
+
+
+
+        .about-text strong {
+
+            font-weight: 600;
+
+        }
+
+
+
+        .history-date {
+
+            font-size: 1.5rem;
+
+            font-weight: 600;
+
+            color: #3D2817;
+
+            margin-bottom: 1.5rem;
+
+        }
+
+
+
+        .history-highlight {
+
+            font-weight: 600;
+
+        }
+
+
+
+        /* What We Do Cards */
+
+        .cards-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+            gap: 2rem;
+
+        }
+
+
+
+        .card {
+
+            background: white;
+
+            border-radius: 0.5rem;
+
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+
+            padding: 2rem;
+
+            transition: box-shadow 0.3s;
+
+        }
+
+
+
+        .card:hover {
+
+            box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+
+        }
+
+
+
+        .card-icon {
+
+            width: 4rem;
+
+            height: 4rem;
+
+            background: #3D2817;
+
+            border-radius: 50%;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            margin-bottom: 1.5rem;
+
+        }
+
+
+
+        .card-icon svg {
+
+            width: 2rem;
+
+            height: 2rem;
+
+            color: white;
+
+        }
+
+
+
+        .card-title {
+
+            font-size: 1.5rem;
+
+            font-weight: bold;
+
+            color: #3D2817;
+
+            margin-bottom: 1rem;
+
+        }
+
+
+
+        .card-text {
+
+            color: #6B4423;
+
+            line-height: 1.75;
+
+        }
+
+
+
+        /* Photo Gallery */
+
+        .gallery-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+            gap: 2rem;
+
+        }
+
+
+
+        .gallery-item {
+
+            position: relative;
+
+            overflow: hidden;
+
+            border-radius: 1rem;
+
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+
+            cursor: pointer;
+
+            aspect-ratio: 4/3;
+
+        }
+
+
+
+        .gallery-item img {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            transition: transform 0.7s;
+
+        }
+
+
+
+        .gallery-item:hover img {
+
+            transform: scale(1.1);
+
+        }
+
+
+
+        .gallery-overlay {
+
+            position: absolute;
+
+            inset: 0;
+
+            background: linear-gradient(to top, rgba(61, 40, 23, 0.8), transparent);
+
+            opacity: 0;
+
+            transition: opacity 0.5s;
+
+            display: flex;
+
+            align-items: flex-end;
+
+            justify-content: center;
+
+            padding-bottom: 1.5rem;
+
+        }
+
+
+
+        .gallery-item:hover .gallery-overlay {
+
+            opacity: 1;
+
+        }
+
+
+
+        .gallery-overlay span {
+
+            color: white;
+
+            font-weight: 600;
+
+            font-size: 1.125rem;
+
+        }
+
+
+
+        /* Modal */
+
+        .modal {
+
+            display: none;
+
+            position: fixed;
+
+            inset: 0;
+
+            background: rgba(0, 0, 0, 0.9);
+
+            z-index: 50;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding: 1rem;
+
+        }
+
+
+
+        .modal.active {
+
+            display: flex;
+
+        }
+
+
+
+        .modal-close {
+
+            position: absolute;
+
+            top: 1rem;
+
+            right: 1rem;
+
+            color: white;
+
+            cursor: pointer;
+
+            font-size: 2.5rem;
+
+            background: none;
+
+            border: none;
+
+            padding: 0.5rem;
+
+        }
+
+
+
+        .modal-close:hover {
+
+            color: #F5E6D3;
+
+        }
+
+
+
+        .modal img {
+
+            max-width: 100%;
+
+            max-height: 90vh;
+
+            object-fit: contain;
+
+            border-radius: 0.5rem;
+
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+
+        }
+
+
+
+        /* Press Section */
+
+        .press-scroll {
+
+            position: relative;
+
+        }
+
+
+
+        .press-container {
+
+            display: flex;
+
+            gap: 2rem;
+
+            overflow-x: auto;
+
+            padding-bottom: 1.5rem;
+
+            scroll-snap-type: x mandatory;
+
+            scrollbar-width: none;
+
+            -ms-overflow-style: none;
+
+        }
+
+
+
+        .press-container::-webkit-scrollbar {
+
+            display: none;
+
+        }
+
+
+
+        .press-item {
+
+            flex-shrink: 0;
+
+            scroll-snap-align: center;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            justify-content: center;
+
+            height: 8rem;
+
+            width: 16rem;
+
+            padding: 2rem;
+
+            background: #FFF8F0;
+
+            border-radius: 0.5rem;
+
+            border: 2px solid #F5E6D3;
+
+            transition: all 0.3s;
+
+        }
+
+
+
+        .press-item:hover {
+
+            border-color: #3D2817;
+
+            transform: scale(1.05);
+
+            box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+
+        }
+
+
+
+        .press-indicator {
+
+            text-align: center;
+
+            margin-top: 1.5rem;
+
+            font-size: 0.875rem;
+
+            color: #8B5E3C;
+
+            font-style: italic;
+
+        }
+
+
+
+        /* CTA Section */
+
+        .cta-section {
+
+            background: #3D2817;
+
+            color: white;
+
+            padding: 6rem 1.5rem;
+
+        }
+
+
+
+        .cta-container {
+
+            max-width: 64rem;
+
+            margin: 0 auto;
+
+            text-align: center;
+
+        }
+
+
+
+        .cta-title {
+
+            font-size: 3.75rem;
+
+            font-weight: bold;
+
+            margin-bottom: 1.5rem;
+
+        }
+
+
+
+        .cta-subtitle {
+
+            font-size: 1.5rem;
+
+            color: #E8D4BE;
+
+            margin-bottom: 3rem;
+
+        }
+
+
+
+        .social-links {
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 2rem;
+
+            margin-top: 3rem;
+
+        }
+
+
+
+        .social-link {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 0.75rem;
+
+            font-size: 1.125rem;
+
+            transition: color 0.3s;
+
+        }
+
+
+
+        .social-link:hover {
+
+            color: #E8D4BE;
+
+        }
+
+
+
+        .social-icon {
+
+            padding: 0.75rem;
+
+            background: rgba(255, 255, 255, 0.1);
+
+            border-radius: 9999px;
+
+            transition: background 0.3s;
+
+        }
+
+
+
+        .social-link:hover .social-icon {
+
+            background: rgba(255, 255, 255, 0.2);
+
+        }
+
+
+
+        /* Footer */
+
+        footer {
+
+            background: #2A1810;
+
+            color: #E8D4BE;
+
+            text-align: center;
+
+            padding: 2rem 1.5rem;
+
+        }
+
+
+
+        footer p {
+
+            font-size: 0.875rem;
+
+        }
+
+
+
+        /* Responsive */
+
+        @media (min-width: 640px) {
+
+            .hero-buttons {
+
+                flex-direction: row;
+
+            }
+
+        }
+
+
+
+        @media (min-width: 768px) {
+
+            .hero h1 {
+
+                font-size: 4.5rem;
+
+            }
+
+
+
+            .section-title {
+
+                font-size: 3.75rem;
+
+            }
+
+
+
+            .about-text, .history-text {
+
+                font-size: 1.5rem;
+
+            }
+
+
+
+            .cta-title {
+
+                font-size: 4rem;
+
+            }
+
+
+
+            .cta-subtitle {
+
+                font-size: 1.5rem;
+
+            }
+
+        }
+
+
+
+        @media (max-width: 768px) {
+
+            .hero h1 {
+
+                font-size: 2.5rem;
+
+            }
+
+
+
+            .section-title {
+
+                font-size: 2rem;
+
+            }
+
+
+
+            .cta-title {
+
+                font-size: 2.5rem;
+
+            }
+
+
+
+            .gallery-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+
+            .cards-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <div class="logo-container">
+
+                <div class="logo-card">
+
+                    <img src="https://customer-assets.emergentagent.com/job_pinto-hub/artifacts/8s42j8pk_pint%20of%20view%20logo.webp" alt="Pint of View Logo">
+
+                </div>
+
+            </div>
+
+            
+
+            <h1>India's Largest<br>Lecture Community</h1>
+
+            
+
+            <p class="hero-subtitle">
+
+                Curated, classroom-style lectures in relaxed spaces over drinks — beer or mocktails.
+
+            </p>
+
+            
+
+            <div class="hero-buttons">
+
+                <a href="https://pintofviewclub.substack.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+
+                    📧 Subscribe to Newsletter
+
+                </a>
+
+                <a href="https://www.instagram.com/pintofview.club" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+
+                    📷 Follow on Instagram
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Chapters Section -->
+
+    <section class="section section-bg-beige">
+
+        <div class="container text-center">
+
+            <div class="icon-wrapper">
+
+                <svg width="48" height="48" fill="none" stroke="#3D2817" viewBox="0 0 24 24">
+
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+
+                </svg>
+
+            </div>
+
+            <h2 class="section-title">Our Chapters</h2>
+
+            <p class="section-subtitle">Join our community across India and internationally</p>
+
+            
+
+            <div class="cities-grid">
+
+                <a href="https://instagram.com/pintofview.bangalore" target="_blank" class="city-badge">Bangalore</a>
+
+                <a href="https://instagram.com/pintofview.delhi" target="_blank" class="city-badge">Delhi</a>
+
+                <a href="https://instagram.com/pintofview.mumbai" target="_blank" class="city-badge">Mumbai</a>
+
+                <a href="https://instagram.com/pintofview.chennai" target="_blank" class="city-badge">Chennai</a>
+
+                <a href="https://instagram.com/pintofview.hyd" target="_blank" class="city-badge">Hyderabad</a>
+
+                <a href="https://instagram.com/pintofviewpune" target="_blank" class="city-badge">Pune</a>
+
+                <a href="https://instagram.com/pintofview.mysuru" target="_blank" class="city-badge">Mysuru</a>
+
+                <a href="https://instagram.com/pintofview.nagpur" target="_blank" class="city-badge">Nagpur</a>
+
+                <a href="https://instagram.com/pintofview.goa" target="_blank" class="city-badge">Goa</a>
+
+                <a href="https://instagram.com/pintofview.noida" target="_blank" class="city-badge">Noida</a>
+
+                <a href="https://instagram.com/pintofview.gurgaon" target="_blank" class="city-badge">Gurgaon</a>
+
+                <a href="https://instagram.com/pintofview.jaipur" target="_blank" class="city-badge">Jaipur</a>
+
+                <a href="https://instagram.com/pintofview.london" target="_blank" class="city-badge">London</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- About Section -->
+
+    <section class="section section-bg-white">
+
+        <div class="about-content">
+
+            <h2 class="section-title">About Us</h2>
+
+            
+
+            <p class="about-text"><strong>Pint of View is a protest against utilitarian learning.</strong></p>
+
+            <p class="about-text">No networking agenda. No career ROI.</p>
+
+            <p class="about-text">Just ideas, conversations, and the joy of learning for its own sake.</p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- History Section -->
+
+    <section class="section section-bg-beige">
+
+        <div class="history-content">
+
+            <h2 class="section-title">Our Story</h2>
+
+            
+
+            <p class="history-date">July 2025</p>
+
+            <p class="history-text">
+
+                Founded in Bangalore by Harsh Snehanshu, Meghna Chaudhary, and Shruti Sah, Pint of View began as a radical experiment in learning.
+
+            </p>
+
+            <p class="history-text">
+
+                What started in one city has ignited across India, with passionate communities forming in 13+ cities.
+
+            </p>
+
+            <p class="history-text history-highlight">
+
+                Now expanding globally with our first international chapter in London.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- What We Do Section -->
+
+    <section class="section section-bg-beige">
+
+        <div class="container">
+
+            <h2 class="section-title text-center">What We Do</h2>
+
+            
+
+            <div class="cards-grid">
+
+                <div class="card">
+
+                    <div class="card-icon">
+
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+
+                        </svg>
+
+                    </div>
+
+                    <h3 class="card-title">Curated Lectures</h3>
+
+                    <p class="card-text">Thoughtfully selected topics and speakers who bring deep knowledge and passion to every session.</p>
+
+                </div>
+
+
+
+                <div class="card">
+
+                    <div class="card-icon">
+
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+
+                        </svg>
+
+                    </div>
+
+                    <h3 class="card-title">Relaxed Spaces</h3>
+
+                    <p class="card-text">Bars, coworking spaces, and bookstores — informal venues that encourage open dialogue and comfort.</p>
+
+                </div>
+
+
+
+                <div class="card">
+
+                    <div class="card-icon">
+
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+
+                        </svg>
+
+                    </div>
+
+                    <h3 class="card-title">Learning for Joy</h3>
+
+                    <p class="card-text">No hidden agendas. Pure intellectual curiosity and the simple pleasure of expanding your mind.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Photo Gallery Section -->
+
+    <section class="section section-bg-cream">
+
+        <div class="container">
+
+            <h2 class="section-title text-center">Experience the Community</h2>
+
+            <p class="section-subtitle text-center">Witness the magic of ideas shared over drinks</p>
+
+            
+
+            <div class="gallery-grid">
+
+                <div class="gallery-item" onclick="openModal(0)">
+
+                    <img src="https://customer-assets.emergentagent.com/job_pinto-hub/artifacts/bbxv5htw_WhatsApp%20Image%202026-02-25%20at%2016.29.53%20%281%29.jpeg" alt="Neuroscience lecture">
+
+                    <div class="gallery-overlay">
+
+                        <span>Click to view</span>
+
+                    </div>
+
+                </div>
+
+                <div class="gallery-item" onclick="openModal(1)">
+
+                    <img src="https://customer-assets.emergentagent.com/job_pinto-hub/artifacts/6tujvo8f_X34A0610%20%281%29.jpg" alt="Engaged audience">
+
+                    <div class="gallery-overlay">
+
+                        <span>Click to view</span>
+
+                    </div>
+
+                </div>
+
+                <div class="gallery-item" onclick="openModal(2)">
+
+                    <img src="https://customer-assets.emergentagent.com/job_pinto-hub/artifacts/37tq1pvj_X34A0660.jpg" alt="Speaker presenting">
+
+                    <div class="gallery-overlay">
+
+                        <span>Click to view</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Modal -->
+
+    <div id="imageModal" class="modal" onclick="closeModal()">
+
+        <button class="modal-close" onclick="closeModal()">×</button>
+
+        <img id="modalImage" src="" alt="" onclick="event.stopPropagation()">
+
+    </div>
+
+
+
+    <!-- In The Press Section -->
+
+    <section class="section section-bg-white">
+
+        <div class="container">
+
+            <h2 class="section-title text-center">In The Press</h2>
+
+            <p class="section-subtitle text-center">Featured in leading publications</p>
+
+            
+
+            <div class="press-scroll">
+
+                <div class="press-container">
+
+                    <a href="https://www.indiatoday.in/education-today/featurephilia/story/bars-and-benches-learning-has-left-the-classroom-to-make-a-pint-pint-of-view-nerd-nite-unlearn-ai-rebellion-2865466-2026-02-09" target="_blank" class="press-item">
+
+                        <span style="font-size: 1.875rem; font-weight: bold; color: #C8102E; font-family: Georgia, serif;">India Today</span>
+
+                        <span style="font-size: 0.75rem; color: #6B4423;">Education Today</span>
+
+                    </a>
+
+                    
+
+                    <a href="https://indianexpress.com/article/cities/delhi/class-apart-young-adults-delhi-raise-bar-hang-out-profs-learn-unwind-10521948/" target="_blank" class="press-item">
+
+                        <div style="text-align: center;">
+
+                            <div style="font-size: 0.75rem; font-weight: bold; letter-spacing: 2px; font-family: 'Times New Roman', serif;">THE</div>
+
+                            <div style="font-size: 1.5rem; font-weight: bold; letter-spacing: 1px; font-family: 'Times New Roman', serif;">INDIAN EXPRESS</div>
+
+                        </div>
+
+                    </a>
+
+                    
+
+                    <a href="https://timesofindia.indiatimes.com/entertainment/events/mumbai/mumbais-social-scene-gets-a-brain-boost-with-pints-and-ppts-at-bar-lectures/articleshow/128562314.cms" target="_blank" class="press-item">
+
+                        <div style="text-align: center;">
+
+                            <div style="font-size: 0.75rem; font-weight: bold; font-family: serif;">The</div>
+
+                            <div style="font-size: 1.5rem; font-weight: bold; font-family: serif;">Times of India</div>
+
+                        </div>
+
+                    </a>
+
+                    
+
+                    <a href="https://www.cntraveller.in/story/why-people-are-walking-into-bars-for-lectures-on-bats-and-textiles/" target="_blank" class="press-item">
+
+                        <div style="text-align: center;">
+
+                            <div style="font-size: 1.25rem; font-weight: bold; letter-spacing: 3px; font-family: serif;">CONDÉ NAST</div>
+
+                            <div style="font-size: 1.125rem; font-weight: 300; letter-spacing: 2px; font-family: serif;">Traveller</div>
+
+                        </div>
+
+                    </a>
+
+                    
+
+                    <a href="https://thenodmag.com/content/pint-of-view-mumbai-chapter-lectures-bars-restaurants" target="_blank" class="press-item">
+
+                        <div style="font-size: 1.875rem; font-weight: 900; font-family: Arial, sans-serif;">THE NOD</div>
+
+                    </a>
+
+                    
+
+                    <a href="https://m.dailyhunt.in/news/india/english/homegrown-epaper-homegrow/pint%2Bof%2Bview%2Battend%2Ban%2Bevent%2Bseries%2Bthat%2Bsees%2Bscholars%2Bdelivering%2Blectures%2Bin%2Bbars-newsid-n681546630" target="_blank" class="press-item">
+
+                        <div style="font-size: 1.875rem; font-weight: 700; color: #FF6B35; font-family: Arial, sans-serif;">HOMEGROWN</div>
+
+                    </a>
+
+                    
+
+                    <a href="https://www.thehindu.com/life-and-style/pint-of-view-slakes-bengalureans-thirst-for-knowledge/article70022636.ece" target="_blank" class="press-item">
+
+                        <div style="text-align: center;">
+
+                            <div style="font-size: 0.75rem; font-weight: bold; letter-spacing: 2px; font-family: Georgia, serif;">THE</div>
+
+                            <div style="font-size: 1.875rem; font-weight: bold; font-family: Georgia, serif;">HINDU</div>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+                <div class="press-indicator">← Scroll to see more →</div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CTA Section -->
+
+    <section class="cta-section">
+
+        <div class="cta-container">
+
+            <h2 class="cta-title">Join the Conversation</h2>
+
+            <p class="cta-subtitle">Stay updated with upcoming lectures, insights, and community stories</p>
+
+            
+
+            <a href="https://pintofviewclub.substack.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="display: inline-flex;">
+
+                📧 Subscribe Now
+
+            </a>
+
+            
+
+            <div class="social-links">
+
+                <a href="https://www.instagram.com/pintofview.club" target="_blank" rel="noopener noreferrer" class="social-link">
+
+                    <div class="social-icon">📷</div>
+
+                    <span>Instagram</span>
+
+                </a>
+
+                <a href="https://www.linkedin.com/company/pint-of-view-club/" target="_blank" rel="noopener noreferrer" class="social-link">
+
+                    <div class="social-icon">💼</div>
+
+                    <span>LinkedIn</span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>© 2026 Pint of View<sup style="font-size: 0.75rem;">TM</sup></p>
+
+    </footer>
+
+
+
+    <script>
+
+        const images = [
+
+            'https://customer-assets.emergentagent.com/job_pinto-hub/artifacts/bbxv5htw_WhatsApp%20Image%202026-02-25%20at%2016.29.53%20%281%29.jpeg',
+
+            'https://customer-assets.emergentagent.com/job_pinto-hub/artifacts/6tujvo8f_X34A0610%20%281%29.jpg',
+
+            'https://customer-assets.emergentagent.com/job_pinto-hub/artifacts/37tq1pvj_X34A0660.jpg'
+
+        ];
+
+
+
+        function openModal(index) {
+
+            const modal = document.getElementById('imageModal');
+
+            const modalImage = document.getElementById('modalImage');
+
+            modalImage.src = images[index];
+
+            modal.classList.add('active');
+
+        }
+
+
+
+        function closeModal() {
+
+            const modal = document.getElementById('imageModal');
+
+            modal.classList.remove('active');
+
+        }
+
+
+
+        // Close modal on ESC key
+
+        document.addEventListener('keydown', function(event) {
+
+            if (event.key === 'Escape') {
+
+                closeModal();
+
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>
+
+
+
